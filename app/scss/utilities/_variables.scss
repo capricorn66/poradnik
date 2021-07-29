@@ -1,0 +1,40 @@
+// Default colors
+
+$white: #FFF;
+$black: #000;
+    $lightblack: #191919;
+$gray-100: #FAFAFA;
+$gray-200: #E3E3E3;
+    $gray-300: #CCC;
+    $gray-400: #a7a9ac;
+$gray-500: #959595;
+$gray-600: #7F7F7F;
+$gray-700: #494949;
+$gray-800: #4E4E4E;
+    $gray-900: #343434;
+
+$body-color: $gray-800;
+
+$alert-red: #ff4200;
+$alert-green: #559f4f;
+$alert-yellow: #ffd300;
+$alert-blue: #0b7bb9;
+
+//primary colors
+
+$app-color-1: #D13239;
+$app-color-2: #007FB5;
+$app-color-3: #F7941D;
+
+// icons
+$icon-arrow-left-black: url("/images/arrow-left-black.svg") !default;
+$icon-arrow-left-gray: url("/images/arrow-left-gray.svg") !default;
+$icon-arrow-left-white: url("/images/arrow-left-white.svg") !default;
+$icon-arrow-right-black: url("/images/arrow-right-black.svg") !default;
+$icon-arrow-right-gray: url("/images/arrow-right-gray.svg") !default;
+$icon-arrow-right-white: url("/images/arrow-right-white.svg") !default;
+
+
+// Navs
+
+$nav-padding-x: 1.5rem !default;

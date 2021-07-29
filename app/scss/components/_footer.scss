@@ -1,0 +1,22 @@
+/* footer
+*******************************************************************/
+
+footer {
+  padding: 40px 0;
+  font-size: 14px;
+  background-color: $gray-800;
+  color: $white;
+
+  p {
+    font-size: 14px;
+  }
+
+  a {
+    color: $white;
+    font-weight: 600;
+    &:focus,
+    &:hover {
+      color: $gray-100;
+    }
+  }
+}

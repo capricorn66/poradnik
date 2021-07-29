@@ -1,0 +1,491 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icomoon/fonts/icomoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-circle-left:before {
+  content: "\e99a";
+}
+.icon-circle-right:before {
+  content: "\e991";
+}
+.icon-open-eye:before {
+  content: "\e992";
+}
+.icon-ondemand-video:before {
+  content: "\e993";
+}
+.icon-metro-tools:before {
+  content: "\e994";
+}
+.icon-file-text:before {
+  content: "\e995";
+}
+.icon-water-drops:before {
+  content: "\e996";
+}
+.icon-user-shield:before {
+  content: "\e997";
+}
+.icon-sk-pin:before {
+  content: "\e998";
+}
+.icon-share:before {
+  content: "\e999";
+}
+.icon-ow:before {
+  content: "\e990";
+}
+.icon-40w:before {
+  content: "\e98e";
+}
+.icon-ac6:before {
+  content: "\e98f";
+}
+.icon-mouse:before {
+  content: "\e98d";
+}
+.icon-bars:before {
+  content: "\e98c";
+}
+.icon-3d:before {
+  content: "\e900";
+}
+.icon-5w:before {
+  content: "\e901";
+}
+.icon-7:before {
+  content: "\e902";
+}
+.icon-8mm:before {
+  content: "\e903";
+}
+.icon-8w:before {
+  content: "\e904";
+}
+.icon-10mm:before {
+  content: "\e905";
+}
+.icon-10w:before {
+  content: "\e906";
+}
+.icon-12mm:before {
+  content: "\e907";
+}
+.icon-15w:before {
+  content: "\e908";
+}
+.icon-20w:before {
+  content: "\e909";
+}
+.icon-21:before {
+  content: "\e90a";
+}
+.icon-23:before {
+  content: "\e90b";
+}
+.icon-30w:before {
+  content: "\e90c";
+}
+.icon-31:before {
+  content: "\e90d";
+}
+.icon-32:before {
+  content: "\e90e";
+}
+.icon-33:before {
+  content: "\e90f";
+}
+.icon-360:before {
+  content: "\e910";
+}
+.icon-ac3:before {
+  content: "\e911";
+}
+.icon-ac4:before {
+  content: "\e912";
+}
+.icon-ac5:before {
+  content: "\e913";
+}
+.icon-acrobat:before {
+  content: "\e914";
+}
+.icon-add:before {
+  content: "\e915";
+}
+.icon-angle-angle:before {
+  content: "\e916";
+}
+.icon-apteki:before {
+  content: "\e917";
+}
+.icon-aqua-pearl:before {
+  content: "\e918";
+}
+.icon-aqua-zero:before {
+  content: "\e919";
+}
+.icon-aranzator:before {
+  content: "\e91a";
+}
+.icon-arrow-bottom:before {
+  content: "\e91b";
+}
+.icon-arrow-left:before {
+  content: "\e91c";
+}
+.icon-arrow-more:before {
+  content: "\e91d";
+}
+.icon-arrow-right:before {
+  content: "\e91e";
+}
+.icon-arrow-thin-down:before {
+  content: "\e91f";
+}
+.icon-arrow-thin-left:before {
+  content: "\e920";
+}
+.icon-arrow-thin-right:before {
+  content: "\e921";
+}
+.icon-arrow-thin-top:before {
+  content: "\e922";
+}
+.icon-arrow-up:before {
+  content: "\e923";
+}
+.icon-autostrada:before {
+  content: "\e924";
+}
+.icon-bike:before {
+  content: "\e925";
+}
+.icon-biura:before {
+  content: "\e926";
+}
+.icon-blaty-kuchenne:before {
+  content: "\e927";
+}
+.icon-bookmark:before {
+  content: "\e928";
+}
+.icon-bookmarked:before {
+  content: "\e929";
+}
+.icon-bubble:before {
+  content: "\e92a";
+}
+.icon-bus:before {
+  content: "\e92b";
+}
+.icon-car:before {
+  content: "\e92c";
+}
+.icon-cart:before {
+  content: "\e92d";
+}
+.icon-centra-sportowe:before {
+  content: "\e92e";
+}
+.icon-centrum-medyczne:before {
+  content: "\e92f";
+}
+.icon-centrum-miasta:before {
+  content: "\e930";
+}
+.icon-check:before {
+  content: "\e931";
+}
+.icon-cieplo-z-powietrza:before {
+  content: "\e932";
+}
+.icon-close:before {
+  content: "\e933";
+}
+.icon-cp:before {
+  content: "\e934";
+}
+.icon-delete:before {
+  content: "\e935";
+}
+.icon-dopasowanie:before {
+  content: "\e936";
+}
+.icon-download:before {
+  content: "\e937";
+}
+.icon-drzw-kuchenne:before {
+  content: "\e938";
+}
+.icon-dustbin:before {
+  content: "\e939";
+}
+.icon-eco:before {
+  content: "\e93a";
+}
+.icon-eksploatacja:before {
+  content: "\e93b";
+}
+.icon-energooszczednosc:before {
+  content: "\e93c";
+}
+.icon-express:before {
+  content: "\e93d";
+}
+.icon-facebook-sq:before {
+  content: "\e93e";
+}
+.icon-facebook:before {
+  content: "\e93f";
+}
+.icon-favorite:before {
+  content: "\e940";
+}
+.icon-fullscreen:before {
+  content: "\e941";
+}
+.icon-gabinety-lekarskie:before {
+  content: "\e942";
+}
+.icon-home-key:before {
+  content: "\e943";
+}
+.icon-home:before {
+  content: "\e944";
+}
+.icon-hotele:before {
+  content: "\e945";
+}
+.icon-info:before {
+  content: "\e946";
+}
+.icon-instagram-sq:before {
+  content: "\e947";
+}
+.icon-jakosc:before {
+  content: "\e948";
+}
+.icon-krono:before {
+  content: "\e949";
+}
+.icon-kuchnie:before {
+  content: "\e94a";
+}
+.icon-laboratiora:before {
+  content: "\e94b";
+}
+.icon-lock:before {
+  content: "\e94c";
+}
+.icon-logout:before {
+  content: "\e94d";
+}
+.icon-mail:before {
+  content: "\e94e";
+}
+.icon-map:before {
+  content: "\e94f";
+}
+.icon-meble:before {
+  content: "\e950";
+}
+.icon-news:before {
+  content: "\e951";
+}
+.icon-obiekty-wojskowe:before {
+  content: "\e952";
+}
+.icon-one-world:before {
+  content: "\e953";
+}
+.icon-pages:before {
+  content: "\e954";
+}
+.icon-panele:before {
+  content: "\e955";
+}
+.icon-pdf:before {
+  content: "\e956";
+}
+.icon-percent:before {
+  content: "\e957";
+}
+.icon-phone:before {
+  content: "\e958";
+}
+.icon-photo:before {
+  content: "\e959";
+}
+.icon-pinterest-sq:before {
+  content: "\e95a";
+}
+.icon-play-thin:before {
+  content: "\e95b";
+}
+.icon-play-yt:before {
+  content: "\e95c";
+}
+.icon-play:before {
+  content: "\e95d";
+}
+.icon-pool:before {
+  content: "\e95e";
+}
+.icon-printer:before {
+  content: "\e95f";
+}
+.icon-przystosowanie:before {
+  content: "\e960";
+}
+.icon-remove:before {
+  content: "\e961";
+}
+.icon-restauracje:before {
+  content: "\e962";
+}
+.icon-sale-gimnastyczne:before {
+  content: "\e963";
+}
+.icon-se:before {
+  content: "\e964";
+}
+.icon-search:before {
+  content: "\e965";
+}
+.icon-select:before {
+  content: "\e966";
+}
+.icon-settings-solid:before {
+  content: "\e967";
+}
+.icon-settings:before {
+  content: "\e968";
+}
+.icon-shop:before {
+  content: "\e969";
+}
+.icon-sklep:before {
+  content: "\e96a";
+}
+.icon-sklepy:before {
+  content: "\e96b";
+}
+.icon-so:before {
+  content: "\e96c";
+}
+.icon-szatnie:before {
+  content: "\e96d";
+}
+.icon-szkoly:before {
+  content: "\e96e";
+}
+.icon-szpitale:before {
+  content: "\e96f";
+}
+.icon-t-shirt:before {
+  content: "\e970";
+}
+.icon-tereny-zielone:before {
+  content: "\e971";
+}
+.icon-time:before {
+  content: "\e972";
+}
+.icon-tram:before {
+  content: "\e973";
+}
+.icon-transport-auto:before {
+  content: "\e974";
+}
+.icon-transport-samolot:before {
+  content: "\e975";
+}
+.icon-transport-statek:before {
+  content: "\e976";
+}
+.icon-trees:before {
+  content: "\e977";
+}
+.icon-twitter:before {
+  content: "\e978";
+}
+.icon-ulotka-a4-pion:before {
+  content: "\e979";
+}
+.icon-ulotka-a4-poziom:before {
+  content: "\e97a";
+}
+.icon-ulotka-harmonijka:before {
+  content: "\e97b";
+}
+.icon-user-register:before {
+  content: "\e97c";
+}
+.icon-user:before {
+  content: "\e97d";
+}
+.icon-v4:before {
+  content: "\e97e";
+}
+.icon-wa:before {
+  content: "\e97f";
+}
+.icon-water-resistant:before {
+  content: "\e980";
+}
+.icon-wg:before {
+  content: "\e981";
+}
+.icon-where-to-buy:before {
+  content: "\e982";
+}
+.icon-windy:before {
+  content: "\e983";
+}
+.icon-wp:before {
+  content: "\e984";
+}
+.icon-ws:before {
+  content: "\e985";
+}
+.icon-wzornik:before {
+  content: "\e986";
+}
+.icon-youtube-sq:before {
+  content: "\e987";
+}
+.icon-youtube:before {
+  content: "\e988";
+}
+.icon-zoom-out:before {
+  content: "\e989";
+}
+.icon-zoom-zero:before {
+  content: "\e98a";
+}
+.icon-zoom:before {
+  content: "\e98b";
+}
