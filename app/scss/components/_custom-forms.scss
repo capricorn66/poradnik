@@ -1,0 +1,25 @@
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: $app-color-1;
+  background-color: $app-color-1;
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border-color: rgba($app-color-1,.5);;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 .2rem rgba($app-color-1,.25);
+}
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  background-color: rgba($app-color-1,.25);
+  border-color: rgba($app-color-1,.25);
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 0;
+}
+
+.custom-control-label::before {
+  border: $gray-700 solid 1px;
+}

@@ -119,17 +119,18 @@
     letter-spacing: .07em;
     text-transform: uppercase;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   &__btn {
-    background-color: $gray-800;
+    background-color: $gray-700;
     color: $white;
     border-radius: 4px;
     padding: 3px 8px;
     display: inline-block;
     font-size: 14px;
     margin: 0 4px 6px 0;
+    letter-spacing: .35px;
     &--active,
     &:hover {
       text-decoration: none;
@@ -140,7 +141,7 @@
 }
 
 .block {
-  border: 1px solid $gray-300;
+  border: 1px solid $gray-200;
   padding: 30px;
   margin-top: 30px;
   &__icon {
@@ -187,15 +188,14 @@
   li {
     margin-bottom: 20px;
     &::before {
-      content: "\2022";
-      color: $app-color-1;
-      font-weight: bold;
-      font-size: 24px;
-      line-height: 0;
+      content: "";
+      background-color: $app-color-1;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
       display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-      top: .16em;
+      margin: 0 10px 0 -1em;
+      top: -1px;
       position: relative;
     }
   }
