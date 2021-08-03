@@ -11,10 +11,12 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://www.swisskrono.pl/bundles/kronokrono/css/swiper.min.css+flag-icon.min.css+jquery.fancybox.css+icons.css,qd==202004301314+style.css,qd==202012070914+scss,_aside.css+scss,_breadcrumb.css,qd==202103021101+scss,_buttons.css,qd==202101111437+scss,_cookies.css+scss,_fancybox.css+scss,_footer.css,qd==202104161548+scss,_general.css+scss,_header.css,q202104161420+scss,_helpers.css+scss,_inputs.css+scss,_jumbotron.css,qd==202010221249+scss,_news.css,qd==202104161457+scss,_decors.css,qd==2021051354+scss,_pagination.css+scss,_sideShortCuts.css+scss,_table.css+scss,_toTop.css,qd==202011121253+ezkrono.css+app.css,qd==202105131408+style_eureka.css,qd==202105271644+style_kronopol.css.pagespeed.cc.3tC5cTJjmL.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/css/swiper.min.css" integrity="sha512-FIz4MXnNZ3LyvDoGiAor9cYemdeU9MlBQeROHns9vo2s25x0ZZLjEMXiol11sVEC5JGf/3CsuB9aX3cMHRzBgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" type="text/javascript"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" type="text/javascript"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/js/swiper.jquery.min.js" integrity="sha512-VwqFGQ+gsRtA3nHtBg2LEfJh8aAjEOKkzXsX40c/Ib8YCHXQq1bwBtFKG9ovypqgSmqf//+SKwKymt+5i8REOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -233,6 +235,62 @@
             </div>
         </div>
 
+        <div class="bg-gray-100 pt-60 pb-80 mb-40">
+
+            <div class="container text-center">
+
+                <h4 class="mb-80">Instrukcja montażu krok po kroku</h4>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1 mb-15">
+                            <p class="mb-30">1 / 3</p>
+                            <p>Podpis do 1-szego obrazka.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1 mb-15">
+                            <p class="mb-30">2 / 3</p>
+                            <p>Podpis do 2-go obrazka.</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1 mb-15">
+                            <p class="mb-30">3 / 3</p>
+                            <p>Podpis do 3-go obrazka.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="icon-arrow-thin-left"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="icon-arrow-thin-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+
+            $(document).ready(function(e) {
+
+                var mySwiper = new Swiper('.swiper-container', {
+                    loop: true,
+                    initialSlide: 0,
+                    speed: 400,
+                    spaceBetween: 100,
+                    nextButton: '.swiper-container .swiper-button-next',
+                    prevButton: '.swiper-container .swiper-button-prev'
+                });
+
+            });
+
+
+
+
+        </script>
+
+
         <div class="container">
 
             <div class="row justify-content-center mb-80 py-5">
@@ -240,12 +298,12 @@
                     <h4 class="font-bold mb-20">Pliki do pobrania</h4>
                     <div class="bg-gray-100 p-4">
                         <a href="" class="gray-700 font16 font-bold d-flex text-decoration-none">
-                            <span class="pr-10"><i class="icon-acrobat font20 mt-n1 app-color-1"></i></span>
+                            <span class="pr-10"><i class="icon-file-pdf font20 mt-n1 app-color-1"></i></span>
                             <span>SWISS KRONO - Instrukcja montażu podłogi z zamkiem Aqua Pearl <span class="gray-400">/ pdf 1,21 MB</span></span>
                         </a>
                         <hr>
                         <a href="" class="gray-700 font16 font-bold d-flex text-decoration-none">
-                            <span class="pr-10"><i class="icon-acrobat font20 mt-n1 app-color-1"></i></span>
+                            <span class="pr-10"><i class="icon-file-pdf font20 mt-n1 app-color-1"></i></span>
                             <span>SWISS KRONO - Ważne zasady montażu paneli podłogowych <span class="gray-400">/ pdf 514 kB</span></span>
                         </a>
                     </div>
@@ -301,24 +359,217 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row justify-content-center">
+
+            <div class="row justify-content-center mb-80">
                 <div class="col-lg-9">
                     <div class="blockBorder bg-white d-flex flex-column flex-md-row align-items-center py-2">
 
-                <h6 class="my-3">Czy odpowiedź jest pomocna?</h6>
+                        <h6 class="my-3">Czy odpowiedź jest pomocna?</h6>
 
-                <div class="ml-md-auto my-3">
-                    <button class="btn btn-sm btn-black-outline px-4">TAK</button>
-                    <button class="btn btn-sm btn-black-outline px-4 ml-30">NIE</button>
-                </div>
+                        <div class="ml-md-auto my-3">
+                            <button class="btn btn-sm btn-black-outline px-4">TAK</button>
+                            <button class="btn btn-sm btn-black-outline px-4 ml-30">NIE</button>
+                        </div>
 
-            </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
+        <div class="bg-gray-100 pt-40 mb-40">
+            <div class="container">
+                <h2 class="text-center mb-60 pt-10">Zobacz wszystkie podłogi z zamkiem <strong class="font-weight-bold">Aqua Pearl</strong></h2>
+            </div>
+            <div class="row no-gutters decors">
+                <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+                <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+                <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+                <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+                <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+                <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+                <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+                <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="container text-center">
+            <a href="" class="text-decoration-none">POKAŻ WIĘCEJ <i class="icon-add font24 ml-10"></i></a>
         </div>
 
     </main>
@@ -332,7 +583,6 @@
                     <p><strong>SWISS KRONO</strong> sp. z o.o.</p>
                 </div>
             </div>
-
         </div>
     </footer>
 
