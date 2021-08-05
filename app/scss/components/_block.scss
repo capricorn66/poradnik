@@ -2,6 +2,9 @@
 .searchBlock {
   background: url("../images/search-bg.jpg");
   padding: 48px 0;
+  @media (max-width: 767px) {
+    padding: 28px 0 15px;
+  }
 
   &__divider {
     position: relative;
@@ -31,6 +34,13 @@
       i {
         margin-top: -2px;
       }
+    }
+  }
+
+  .custom-control-label::before {
+    top: .35rem;
+    @media (max-width: 767px) {
+      top: .1rem;
     }
   }
 
