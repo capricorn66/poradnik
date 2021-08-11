@@ -23,3 +23,8 @@
 .custom-control-label::before {
   border: $gray-700 solid 1px;
 }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-size: 10px;
+  background-position-y: 4px;
+}

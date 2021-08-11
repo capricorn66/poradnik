@@ -12,6 +12,10 @@
   font-weight: 700 !important;
 }
 
+.font-weight-300 {
+  font-weight: 300 !important;
+}
+
 .app-color-1 {
   color: $app-color-1 !important;
 }
@@ -38,10 +42,6 @@
 
 .border-bottom-color-1 {
   border-bottom: 8px solid $app-color-1 !important;
-}
-
-h1.h2 span {
-  letter-spacing: 1.25px;
 }
 
 .text-decoration-none {
