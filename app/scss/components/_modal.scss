@@ -1,0 +1,57 @@
+.modal--filter {
+  .modal-dialog {
+
+    @media (max-width: 575.98px) {
+      margin: 0;
+    }
+
+    &.modal-dialog-scrollable {
+      max-height: 100%;
+      @media (max-width: 575.98px) {
+        height: 100vh;
+      }
+
+      .modal-content {
+        max-height: 100%;
+        border: 0;
+        border-radius: 0;
+        .modal-header {
+          box-shadow: 0 -4px 10px 0;
+          border-bottom: 0;
+          padding-right: 50px;
+          border-radius: 0;
+          .modal-title {
+            font-size: 14px;
+          }
+          .close {
+            min-width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            padding: 0;
+            background-color: $app-color-1;
+            color: white;
+            border-radius: 12px;
+            opacity: 1;
+            line-height: 12px;
+            margin: 0;
+            i {
+              font-size: 10px;
+              position: relative;
+              top: -2px;
+            }
+          }
+        }
+        .modal-footer {
+          padding: 0;
+          border: 0;
+          .btn {
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+
+}

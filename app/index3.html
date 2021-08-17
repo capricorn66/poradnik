@@ -154,6 +154,13 @@
     </div>
 
     <main>
+
+        <div class="toolbox">
+            <button role="button" class="btn btn__toolbox"><i class="icon-sk-pin"></i></button>
+            <button role="button" class="btn btn__toolbox"><i class="icon-bubble"></i></button>
+            <button role="button" class="btn btn__toolbox"><i class="icon-share"></i></button>
+        </div>
+
         <div class="container pt-50">
             <div class="row justify-content-center mb-30">
                 <div class="col-lg-9">
@@ -199,7 +206,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div class="filtersBlock mb-40">
+                    <div class="filtersBlock mb-40 d-none d-md-block">
                         <h4>Filtruj tematy wg słów kluczowych</h4>
                         <button class="btn filtersBlock__btn">PODKŁAD</button>
                         <button class="btn filtersBlock__btn">OGRZEWANIE PODŁOGOWE</button>
@@ -217,6 +224,53 @@
                         <button class="btn filtersBlock__btn">DYLATACJA</button>
                         <button class="btn filtersBlock__btn">NARZĘDZIA</button>
                         <button class="btn filtersBlock__btn">ŁĄCZENIE</button>
+                    </div>
+
+                    <button class="btn btn-block d-flex align-items-center px-0 app-color-1 mb-40 text-left d-md-none" type="button" data-toggle="modal" data-target="#filterModal">
+                        <span>FILTRUJ TEMATY WG SŁÓW KLUCZOWYCH</span>
+                        <span class="badge badge-primary ml-auto ml-20">3</span>
+                    </button>
+
+                    <div class="modal modal--filter fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header flex-wrap">
+                                    <h5 class="modal-title" id="filterModalLabel">FILTRUJ TEMATY WG SŁÓW KLUCZOWYCH</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="icon-close"></i>
+                                    </button>
+                                    <div class="w-100 mb-n2 mt-3">
+                                        <button class="btn btn-sm px-0">
+                                            wyczyść filtry <i class="icon-close app-color-1 font10 ml-1"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+
+                                    <div class="d-flex flex-column">
+                                        <button class="btn filtersBlock__btn align-self-start">PODKŁAD</button>
+                                        <button class="btn filtersBlock__btn align-self-start">OGRZEWANIE PODŁOGOWE</button>
+                                        <button class="btn filtersBlock__btn align-self-start filtersBlock__btn--active">PRZYGOTOWANIE PODŁOŻA</button>
+                                        <button class="btn filtersBlock__btn align-self-start">LISTWA</button>
+                                        <button class="btn filtersBlock__btn align-self-start">POWIERZCHNIA</button>
+                                        <button class="btn filtersBlock__btn align-self-start">OPAKOWANIE</button>
+                                        <button class="btn filtersBlock__btn align-self-start">KIERUNEK UKŁADANIA</button>
+                                        <button class="btn filtersBlock__btn align-self-start">CIĘCIE PANELI</button>
+                                        <button class="btn filtersBlock__btn align-self-start">KLEJENIE</button>
+                                        <button class="btn filtersBlock__btn align-self-start">AKLIMATYZACJA</button>
+                                        <button class="btn filtersBlock__btn align-self-start">KOREK</button>
+                                        <button class="btn filtersBlock__btn align-self-start">PAROIZOLACJA</button>
+                                        <button class="btn filtersBlock__btn align-self-start">WŁAŚCIWOŚCI PODŁOŻA</button>
+                                        <button class="btn filtersBlock__btn align-self-start">DYLATACJA</button>
+                                        <button class="btn filtersBlock__btn align-self-start">NARZĘDZIA</button>
+                                        <button class="btn filtersBlock__btn align-self-start">ŁĄCZENIE</button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-lg btn-block btn-red">FILTRUJ</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <ul class="block__list">
