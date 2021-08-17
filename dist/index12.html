@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,300,300italic,400italic,600italic,700,700italic,800,800italic&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <title>SWISS KRONO: Poradnik</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://www.swisskrono.pl/bundles/kronokrono/css/swiper.min.css+flag-icon.min.css+jquery.fancybox.css+icons.css,qd==202004301314+style.css,qd==202012070914+scss,_aside.css+scss,_breadcrumb.css,qd==202103021101+scss,_buttons.css,qd==202101111437+scss,_cookies.css+scss,_fancybox.css+scss,_footer.css,qd==202104161548+scss,_general.css+scss,_header.css,q202104161420+scss,_helpers.css+scss,_inputs.css+scss,_jumbotron.css,qd==202010221249+scss,_news.css,qd==202104161457+scss,_decors.css,qd==2021051354+scss,_pagination.css+scss,_sideShortCuts.css+scss,_table.css+scss,_toTop.css,qd==202011121253+ezkrono.css+app.css,qd==202105131408+style_eureka.css,qd==202105271644+style_kronopol.css.pagespeed.cc.3tC5cTJjmL.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/css/swiper.min.css" integrity="sha512-FIz4MXnNZ3LyvDoGiAor9cYemdeU9MlBQeROHns9vo2s25x0ZZLjEMXiol11sVEC5JGf/3CsuB9aX3cMHRzBgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.0.8/js/swiper.jquery.min.js" integrity="sha512-VwqFGQ+gsRtA3nHtBg2LEfJh8aAjEOKkzXsX40c/Ib8YCHXQq1bwBtFKG9ovypqgSmqf//+SKwKymt+5i8REOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#d13239">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+<link href="css/style.min.css" rel="stylesheet"></head>
+<body>
+
+<header>
+    <div class="collapse navbar-toggleable-md d-lg-none" id="searchBar">
+        <div class="searchBar">
+            <div class="container-fluid">
+                <div class="searchInput">
+                    <form method="get" name="search" action="/autocomplete/search/" class="input-group">
+                        <input class="ekr_tags_autocomplete form-control" name="SearchText" type="text" placeholder="Szukaj w serwisie">
+                        <span class="input-group-append">
+                                <button class="btn btn-grey-outline" type="submit">SZUKAJ</button>
+                            </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="corpHeader">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <a class="navbar-brand" href="https://www.swisskrono.pl/">
+                    <img src="/bundles/kronokrono/images/xswiss_krono.png.pagespeed.ic.jwu2TUsF3i.png" alt="SWISS KRONO" width="336" height="112">
+                </a>
+                <div class="collapse navbar-main navbar-toggleable-md d-lg-flex" id="collapsingNavbar">
+                    <ul class="nav navbar-nav flex-lg-row flex-lg-nowrap">
+                        <li class="nav-item">
+                                <span data-target="#subMenu_Firma" class="nav-link d-none d-lg-flex">
+                                    <span class="nav-name">Firma</span>
+                                </span>
+                        </li>
+                        <li class="nav-item">
+                                <span data-target="#subMenu_Produkty" class="nav-link d-none d-lg-flex">
+                                    <span class="nav-name">Produkty</span>
+                                </span>
+                        </li>
+                        <li class="nav-item">
+                                <span data-target="#subMenu_Gdzie_kupić" class="nav-link d-none d-lg-flex">
+                                    <span class="nav-name">Gdzie kupić</span>
+                                </span>
+                        </li>
+                        <li class="nav-item">
+                                <span data-target="#subMenu_Pobierz" class="nav-link d-none d-lg-flex">
+                                    <span class="nav-name">Pobierz</span>
+                                </span>
+                        </li>
+                        <li class="nav-item current">
+                            <a class="nav-link" href="https://www.swisskrono.pl/Kontakt">
+                                <span class="nav-name">Kontakt </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.swisskrono.pl/Jest-Miejsce" target="_self">
+                                <span class="nav-name">Showroom</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.swisskrono.pl/aandp" target="_self">
+                                <span class="nav-name">Projektanci</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-tools">
+                    <form method="get" name="search" action="https://www.swisskrono.pl/autocomplete/search/" class="searchWrapper d-none d-lg-flex align-items-center">
+                        <button class="btn" type="button"><span class="btn-name">Szukaj</span> <span class="icon-search"></span></button>
+                        <div class="searchContainer">
+                            <div class="input-group flex-nowrap">
+                                <input name="SearchText" class="form-control" type="text" placeholder="szukaj na stronie">
+                                <div class="input-group-append">
+                                    <button class="btn" type="button"><span class="icon-close font12"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="btn d-lg-none" type="button" data-toggle="collapse" data-target="#searchBar"><span class="icon-search"></span></button>
+                    <div class="lang dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" id="langDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="flag-icon flag-icon-pl"></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="langDropdown">
+                            <a href="//www.swisskrono.pl/en" class="dropdown-item">
+                                <span class="flag-icon flag-icon-gb"></span>
+                            </a>
+                            <a href="//www.swisskrono.pl/es" class="dropdown-item">
+                                <span class="flag-icon flag-icon-es"></span>
+                            </a>
+                            <a href="//www.swisskrono.pl/de" class="dropdown-item">
+                                <span class="flag-icon flag-icon-de"></span>
+                            </a>
+                            <a href="//www.swisskrono.pl/ru" class="dropdown-item">
+                                <span class="flag-icon flag-icon-ru"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="fav">
+                            <span data-target="#subMenu_Bookmarks" class="fav-item d-none d-lg-flex">
+                                <i class="icon-bookmarked" style="color:#4D4F53;"></i>
+                            </span>
+                        <span class="fav-item dropdown-toggle d-lg-none">
+                                <i class="icon-bookmarked"></i>
+                            </span>
+                    </div>
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsingNavbar">☰</button>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="breadcrumbContainer">
+    <div class="container d-flex flex-wrap justify-content-between">
+        <ol class="breadcrumb mb-5">
+            <li class="breadcrumb-item">
+                <a href="">Strona Główna</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="">Poradnik</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="">Panele podłogowe</a>
+            </li>
+            <li class="breadcrumb-item active">
+                <a href="">Montaż</a>
+            </li>
+        </ol>
+    </div>
+</div>
+
+<main>
+    <div class="container pt-50">
+
+        <div class="mt-n3 mb-40">
+            <i class="icon-circle-left font18 app-color-1 mr-10"></i>MONTAŻ
+        </div>
+
+        <div class="row justify-content-center mb-30">
+            <div class="col-lg-9">
+                <h1 class="h2 font-weight-700 mb-30 d-flex">
+                        <span class="ml-n100 mr-10 mt-n3">
+                            <span class="iconCircle">
+                                <i class="icon-metro-tools"></i>
+                            </span>
+                        </span>
+                    <span>
+                            Jak przeprowadzić montaż podłogi z zamkiem Aqua Pearl?
+                        </span>
+                </h1>
+                <div class="filtersBlock mb-40">
+                    <h4>SŁOWA KLUCZOWE</h4>
+                    <button class="btn filtersBlock__btn">MONTAŻ</button>
+                    <button class="btn filtersBlock__btn">AQUA PEARL</button>
+                </div>
+
+                <div class="mb-80">
+                    <p class="font16">Montaż podłogi pływającej jest prosty, nie wymaga lat doświadczeń i praktyki. Zanim jednak sami podejmiemy to wyzwanie, warto zapoznać się z instrukcją montażu i oczywiście zobaczyć nasz film, który pokazuje jak profesjonalnie i prawidłowo należy ułożyć podłogę z użyciem paneli podłogowych Aurum Floors. Stosowanie się do zaleceń producenta gwarantuje długi żywot podłogi i co najważniejsze, zadowolenie jej użytkowników!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 py-5 mb-80">
+        <div class="container">
+            <h3 class="text-center mb-70 pt-10">Montaż paneli podłogowych z zamkiem AQUA PEARL</h3>
+            <div class="embed-responsive embed-responsive-16by9 mb-30">
+                <iframe class="embed-responsive-item" vspace="0" hspace="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" scrolling="auto" src="https://www.youtube.com/embed/xjdFG---MyQ" frameborder="0"></iframe>
+            </div>
+            <div class="row justify-content-center mb-10">
+                <div class="col-lg-9">
+                    <p><i>Ut tincidunt eu leo in congue. Proin vel turpis eu dolor imperdiet congue. In diam turpis, consectetur id ante sed, blandit finibus erat. Fusce ex augue, blandit ullamcorper interdum non, pellentesque ultrices metus.</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center mb-60">
+            <div class="col-lg-9 mb-40">
+                <h4 class="font-bold mb-30">Potrzebne materiały i narzędzia</h4>
+                <ul class="block__list">
+                    <li>atestowana folia paroizolacyjna PE ≥ 0,2 mm;</li>
+                    <li>podkład wyrównujący przeznaczony do stosowania pod podłogi pływające (zalecamy o grubości do 3 mm), sprężysty, odporny na trwałe odkształcenia w trakcie użytkowania. Alternatywnie można zastosować zintegrowane podkłady złożone z warstwy paroizolacyjnej i wyrównującej;</li>
+                    <li>zestaw montażowy (łyżka/dźwignia dociągająca, kliny dystansowe, klocek montażowy);</li>
+                    <li>piła o drobnych zębach, wyrzynarka, piła ukosowa;</li>
+                    <li>poziomica o długości min. 1,5 m;</li>
+                    <li>ołówek, liniał, miara, taśma klejąca odporna na wilgoć;</li>
+                    <li>listwy przypodłogowe SWISS KRONO oraz akcesoria do ich montażu.</li>
+                </ul>
+            </div>
+            <div class="col-lg-9 mb-40">
+                <h4 class="font-bold mb-30">Potrzebne materiały i narzędzia</h4>
+                <ol class="block__list">
+                    <li>atestowana folia paroizolacyjna PE ≥ 0,2 mm;</li>
+                    <li>podkład wyrównujący przeznaczony do stosowania pod podłogi pływające (zalecamy o grubości do 3 mm), sprężysty, odporny na trwałe odkształcenia w trakcie użytkowania. Alternatywnie można zastosować zintegrowane podkłady złożone z warstwy paroizolacyjnej i wyrównującej;</li>
+                    <li>zestaw montażowy (łyżka/dźwignia dociągająca, kliny dystansowe, klocek montażowy);</li>
+                    <li>piła o drobnych zębach, wyrzynarka, piła ukosowa;</li>
+                    <li>poziomica o długości min. 1,5 m;</li>
+                    <li>ołówek, liniał, miara, taśma klejąca odporna na wilgoć;</li>
+                    <li>listwy przypodłogowe SWISS KRONO oraz akcesoria do ich montażu.</li>
+                </ol>
+            </div>
+            <div class="col-lg-9 mb-40">
+                <h4 class="font-bold mb-30">Jak złożyć reklamację?</h4>
+                <ol class="block__list block__list--special">
+                    <li>Reklamację należy złożyć w miejscu zakupu paneli podłogowych, nie później niż w ciągu 30 dni od momentu wykrycia ich wady.</li>
+                    <li>Reklamację należy złożyć w formie pisemnej. W zgłoszeniu reklamacyjnym należy określić:
+                        <ul>
+                            <li>nazwę lub numer dekoru, którego zgłoszenie dotyczy;</li>
+                            <li>ilość (m2 lub sztuki);</li>
+                            <li>numer identyfikacyjny reklamowanych paneli nadrukowany na ich spodzie;</li>
+                            <li>miejsce użytkowania;</li>
+                            <li>uzasadnienie reklamacji;</li>
+                            <li>oczekiwany sposób załatwienia reklamacji (wymiana wadliwych paneli na wolne od wad lub obniżenie ceny proporcjonalnie do stwierdzonego stopnia wadliwości.</li>
+                        </ul>
+                    </li>
+                    <li>Do reklamacji należy dołączyć kopię dowodu zakupu paneli, w miarę możliwości także dokumentację fotograficzną, wyraźnie pokazującą zgłaszaną wadę.</li>
+                </ol>
+            </div>
+            <div class="col-lg-9 mb-80">
+                <h4 class="font-bold mb-50">Struktury powierzchni paneli podłogowych SWISS KRONO</h4>
+                <table class="table">
+                    <tr>
+                        <th><i>oznaczenie</i></th>
+                        <th><i>symbol</i></th>
+                        <th class="w-100"><i>nazwa</i></th>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-so font60"></i></td>
+                        <td><strong>PR</strong></td>
+                        <td>struktura porów drewna </td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-cp font60"></i></td>
+                        <td><strong>PR</strong></td>
+                        <td>struktura z efektem satynowym </td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-se font60"></i></td>
+                        <td><strong>SE</strong></td>
+                        <td>głęboka struktura drewna</td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-wa font60"></i></td>
+                        <td><strong>WG</strong></td>
+                        <td>głęboka struktura drewna z połyskiem</td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-wg font60"></i></td>
+                        <td><strong>WP</strong></td>
+                        <td>delikatna struktura drewna</td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-ws font60"></i></td>
+                        <td><strong>WS</strong></td>
+                        <td>struktura drewna szczotkowanego</td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-wp font60"></i></td>
+                        <td><strong>SO</strong></td>
+                        <td>struktura postarzanego drewna</td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-ow font60"></i></td>
+                        <td><strong>CP</strong></td>
+                        <td>struktura synchroniczna z heliochromem</td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-3d font60"></i></td>
+                        <td><strong>3D</strong></td>
+                        <td>struktura synchroniczna trójwymiarowa</td>
+                    </tr>
+                    <tr>
+                        <td><i class="icon-wa font60"></i></td>
+                        <td><strong>OW</strong></td>
+                        <td>struktura matowa</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-9 mb-80">
+                <h4 class="font-bold mb-50">Specyfikacja cokołu przypodłogowego P85</h4>
+                <table class="table">
+                    <tr>
+                        <th><i>właściwość</i></th>
+                        <th><i>wartość</i></th>
+                    </tr>
+                    <tr>
+                        <td>Grubość płyty bazowej</td>
+                        <td><strong>16 mm</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Długość</td>
+                        <td><strong>2500 mm</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Wysokość</td>
+                        <td><strong>85 mm</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Ilość sztuk w opakowaniu</td>
+                        <td><strong>9 sztuk</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Powierzchnia w opakowaniu</td>
+                        <td><strong>22,5 mb</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Waga opakowania</td>
+                        <td><strong>15 kg (+/- 5%)</strong></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-9 mb-80">
+                <h4 class="font-bold mb-30">Zapamiętaj</h4>
+                <div class="block__note block__note--dark">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia.</p>
+                </div>
+            </div>
+            <div class="col-lg-9 mb-80">
+                <h4 class="font-bold mb-30">Zapamiętaj</h4>
+                <div class="block__note">
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia.</p>
+                </div>
+            </div>
+            <div class="col-lg-9 mb-80">
+                <h4 class="font-bold mb-30">Ważne</h4>
+                <div class="block__note block__note--dark">
+                    <ul>
+                        <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</li>
+                        <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 mb-80">
+                <h4 class="font-bold mb-30">Ważne</h4>
+                <div class="block__note">
+                    <ul>
+                        <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</li>
+                        <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mb-60 bg-gray-100 pt-60 pb-60 border-top-color-1 border-bottom-color-1">
+            <div class="col-lg-9">
+                <h4 class="font-bold mb-30">Ważne zasady montażu paneli podłogowych</h4>
+
+                <ul class="block__list">
+                    <li>Laminowanych paneli podłogowych nie należy montować w pomieszczeniach o niestabilnych warunkach klimatycznych oraz takich, w których poziom wilgotności powietrza przekracza 65%, tj. w łazienkach, saunach, pralniach, itp.</li>
+                    <li>Laminowane panele SWISS KRONO mogą być układane w pomieszczeniach z systemem ogrzewania podłogowego wodnego lub elektrycznego.</li>
+                    <li>Panele podłogowe należy układać zgodnie z instrukcją montażu, w pomieszczeniach zamkniętych, które będą ogrzewane w okresie jesienno-zimowym do temperatury pokojowej (instrukcja montażu umieszczona jest na etykiecie załączanej do paczki z panelami podłogowymi lub na spodzie kartonu).</li>
+                    <li>Podłoże pod panele podłogowe musi być płaskie, suche, stabilne, czyste i wyrównane (nierówności nie mogą przekraczać 2 mm na 1 mb podłoża). Na tak przygotowanej posadzce należy koniecznie ułożyć atestowaną folię paroizolacyjną PE o grubości min. 0,2 mm, na zakładkę (około 15 cm) i skleić taśmą odporną na wilgoć. Folię paroizolacyjną należy zastosować również przy montażu paneli na ogrzewaniu podłogowym. Folię paroizolacyjną należy wywinąć na ścianę powyżej poziomu układanej podłogi. Na folię PE 0,2 mm należy ułożyć podkład wyrównujący. Alternatywnie można zastosować zintegrowane podkłady złożone z warstwy paroizolacyjnej i wyrównującej. Podczas montażu prosimy stosować się do zaleceń producenta podkładów, które nie mogą być sprzeczne z zapisami instrukcji montażu laminowanych paneli podłogowych SWISS KRONO.</li>
+                    <li>Oryginalnie zapakowane panele przed montażem należy aklimatyzować przez minimum 48 godzin w warunkach użytkowania (przy temperaturze min. 18ºC i wilgotności powietrza 40-65%).</li>
+                    <li>Zalecamy sprawdzenie paneli podłogowych (przed i w trakcie montażu) pod kątem występowania ewentualnych uszkodzeń mechanicznych i wad powierzchniowych. Podczas montażu ważne jest zapewnienie dobrego oświetlenia układanej podłogi.</li>
+                    <li>Prawidłowo zamontowane panele podłogowe tworzą tzw. podłogę pływającą, dlatego nie mogą być połączone (przyklejone, przybite, dociśnięte bardzo ciężkimi meblami, itp.) ze ścianami i innymi elementami konstrukcji budynku. Wyjątek stanowią panele podłogowe montowane na schodach.</li>
+                    <li>Panele podłogowe pod wpływem zmian temperatury i wilgotności powietrza zmieniają swoje wymiary. Dlatego między podłogą a wszystkimi stałymi elementami konstrukcji budynku (filary, progi, drzwi balkonowe, rury, ściany, futryny, itp.) oraz w przejściach między pomieszczeniami należy zachować 10 mm szczeliny dylatacyjne. W tym celu podczas montażu można użyć klinów dystansowych.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 pt-60 pb-80 mb-40">
+
+        <div class="container text-center">
+
+            <h4 class="mb-80">Instrukcja montażu krok po kroku</h4>
+
+            <div class="swiper-container mb-80" data-rel="swiper-gallery-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide px-5 mb-15">
+                        <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1">
+                    </div>
+                    <div class="swiper-slide px-5 mb-15">
+                        <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1">
+                    </div>
+                    <div class="swiper-slide px-5 mb-15">
+                        <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1">
+                    </div>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="icon-arrow-thin-left"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="icon-arrow-thin-right"></i>
+                </div>
+            </div>
+            <div class="swiper-container mb-80" data-rel="swiper-gallery-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide px-5">
+                        <p class="mb-30">1 / 3</p>
+                        <p>Podpis do 1-szego obrazka.</p>
+                    </div>
+                    <div class="swiper-slide px-5">
+                        <p class="mb-30">2 / 3</p>
+                        <p>Podpis do 2-go obrazka.</p>
+                    </div>
+                    <div class="swiper-slide px-5">
+                        <p class="mb-30">3 / 3</p>
+                        <p>Podpis do 3-go obrazka.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        $(document).ready(function(e) {
+
+            var gallerySwiper1 = new Swiper('.swiper-container[data-rel="swiper-gallery-1"]', {
+                loop: true,
+                initialSlide: 0,
+                speed: 400,
+                spaceBetween: 0,
+                nextButton: '.swiper-container[data-rel="swiper-gallery-1"] .swiper-button-next',
+                prevButton: '.swiper-container[data-rel="swiper-gallery-1"] .swiper-button-prev'
+            });
+
+        });
+
+    </script>
+
+    <div class="container text-center pt-60 pb-80 mb-40">
+
+        <h4 class="mb-80">Przykładowe aranżacje</h4>
+
+        <div class="swiper-container" data-rel="swiper-gallery-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide px-5 mb-15">
+                    <img src="./images/gallery-photo.png" alt="gallery-img" class="img-fluid">
+                </div>
+                <div class="swiper-slide px-5 mb-15">
+                    <img src="./images/gallery-photo.png" alt="gallery-img" class="img-fluid">
+                </div>
+                <div class="swiper-slide px-5 mb-15">
+                    <img src="./images/gallery-photo.png" alt="gallery-img" class="img-fluid">
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="icon-arrow-thin-left"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="icon-arrow-thin-right"></i>
+            </div>
+        </div>
+        <div class="swiper-container" data-rel="swiper-gallery-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide px-5">
+                    <p class="mb-30">1 / 3</p>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-left">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide px-5">
+                    <p class="mb-30">2 / 3</p>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-left">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide px-5">
+                    <p class="mb-30">3 / 3</p>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-left">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        $(document).ready(function(e) {
+
+            var gallerySwiper1 = new Swiper('.swiper-container[data-rel="swiper-gallery-2"]', {
+                loop: true,
+                initialSlide: 0,
+                speed: 400,
+                spaceBetween: 0,
+                nextButton: '.swiper-container[data-rel="swiper-gallery-2"] .swiper-button-next',
+                prevButton: '.swiper-container[data-rel="swiper-gallery-2"] .swiper-button-prev'
+            });
+
+        });
+
+    </script>
+
+    <div class="container pt-60 pb-80 mb-40">
+
+        <h4 class="mb-80 text-center">Przykładowe aranżacje</h4>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h6 class="font-weight-300 mb-30">Etiam dolor urna</h6>
+                <figure>
+                    <img src="./images/gallery-photo.png" alt="gallery-img" class="img-fluid mb-10">
+                    <figcaption class="font-weight-300"><i>An elephant at sunset</i></figcaption>
+                </figure>
+            </div>
+            <div class="col-lg-6">
+                <h6 class="font-weight-300 mb-30">Prion massa diam</h6>
+                <figure>
+                    <img src="./images/gallery-photo.png" alt="gallery-img" class="img-fluid mb-10">
+                    <figcaption class="font-weight-300"><i>An elephant at sunset</i></figcaption>
+                </figure>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row justify-content-center mb-80 py-5">
+            <div class="col-lg-9">
+                <h4 class="font-bold mb-20">Linki</h4>
+                <div class="bg-gray-100 p-4">
+                    <span class="font16 d-flex">
+                        <span class="pr-30"><i class="icon-sk-pin font30 mt-n1 mx-1"></i></span>
+                        <span>Znajdź najbliższego dystrybutora</span>
+                    </span>
+                    <hr>
+                    <span class="font16 d-flex">
+                        <span class="pr-30"><i class="icon-facebook font30 mt-n1"></i></span>
+                        <span>Odwiedź nasz profil na Facebooku</span>
+                    </span>
+                    <hr>
+                    <span class="font16 d-flex">
+                        <span class="pr-30"><i class="icon-instagram-sq font30 mt-n1"></i></span>
+                        <span>Odwiedź nasz profil na Instagramie</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-80 py-5">
+            <div class="col-lg-9">
+                <h4 class="font-bold mb-20">Pliki do pobrania</h4>
+                <div class="bg-gray-100 p-4">
+                    <a href="" class="gray-700 font16 font-bold d-flex text-decoration-none">
+                        <span class="pr-10"><i class="icon-file-pdf font20 mt-n1 app-color-1"></i></span>
+                        <span>SWISS KRONO - Instrukcja montażu podłogi z zamkiem Aqua Pearl <span class="gray-400">/ pdf 1,21 MB</span></span>
+                    </a>
+                    <hr>
+                    <a href="" class="gray-700 font16 font-bold d-flex text-decoration-none">
+                        <span class="pr-10"><i class="icon-file-pdf font20 mt-n1 app-color-1"></i></span>
+                        <span>SWISS KRONO - Ważne zasady montażu paneli podłogowych <span class="gray-400">/ pdf 514 kB</span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-80 py-5">
+            <div class="col-lg-9">
+                <div class="filtersBlock mb-40">
+                    <h4>POWIĄZANE TEMATY</h4>
+                    <div class="blockBorder mb-30">
+                        <div class="mb-15">PANELE PODŁOGOWE | MONTAŻ <i class="icon-ondemand-video font20 ml-10 app-color-1 d-none d-sm-inline-block"></i></div>
+                        <h5 class="font-bold mb-30 d-flex">
+                            <span class="pr-10 d-none d-md-inline-block"><i class="icon-circle-right app-color-1"></i></span>
+                            <span>Jaka jest dopuszczalna wilgotność podłoża, na które układamy panele podłogowe?</span>
+                        </h5>
+                        <button class="btn filtersBlock__btn">PODKŁAD</button>
+                        <button class="btn filtersBlock__btn">OGRZEWANIE PODŁOGOWE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filtersBlock mb-40">
+            <h4>POWIĄZANE TEMATY</h4>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="blockBorder mb-30">
+                        <div class="mb-15">PANELE PODŁOGOWE | MONTAŻ <i class="icon-ondemand-video font20 ml-10 app-color-1 d-none d-sm-inline-block"></i></div>
+                        <h5 class="font-bold mb-30 d-flex">
+                            <span class="pr-10 d-none d-md-inline-block"><i class="icon-circle-right app-color-1"></i></span>
+                            <span>Jaka jest dopuszczalna wilgotność podłoża, na które układamy panele podłogowe?</span>
+                        </h5>
+                        <button class="btn filtersBlock__btn">PODKŁAD</button>
+                        <button class="btn filtersBlock__btn">OGRZEWANIE PODŁOGOWE</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blockBorder mb-30">
+                        <div class="mb-15">PANELE PODŁOGOWE | MONTAŻ <i class="icon-ondemand-video font20 ml-10 app-color-1 d-none d-sm-inline-block"></i></div>
+                        <h5 class="font-bold mb-30 d-flex">
+                            <span class="pr-10"><i class="icon-circle-right app-color-1"></i></span>
+                            <span>Jakie podkłady stosować pod panele układane na ogrzewanie podłogowe?</span>
+                        </h5>
+                        <button class="btn filtersBlock__btn">PODKŁAD</button>
+                        <button class="btn filtersBlock__btn">OGRZEWANIE PODŁOGOWE</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blockBorder mb-30">
+                        <div class="mb-15">PANELE PODŁOGOWE | MONTAŻ <i class="icon-ondemand-video font20 ml-10 app-color-1 d-none d-sm-inline-block"></i></div>
+                        <h5 class="font-bold mb-30 d-flex">
+                            <span class="pr-10"><i class="icon-circle-right app-color-1"></i></span>
+                            <span>Jak przeprowadzić montaż podłogi z kolekcji Aurum z zamkiem Aqua Pearl?</span>
+                        </h5>
+                        <button class="btn filtersBlock__btn">MONTAŻ</button>
+                        <button class="btn filtersBlock__btn">AQUA PEARL</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="blockBorder mb-30">
+                        <div class="mb-15">PANELE PODŁOGOWE | MONTAŻ <i class="icon-ondemand-video font20 ml-10 app-color-1 d-none d-sm-inline-block"></i></div>
+                        <h5 class="font-bold mb-30 d-flex">
+                            <span class="pr-10"><i class="icon-circle-right app-color-1"></i></span>
+                            <span>Jak przeprowadzić montaż podłogi z kolekcji Aurum z zamkiem Aqua Pearl?</span>
+                        </h5>
+                        <button class="btn filtersBlock__btn">MONTAŻ</button>
+                        <button class="btn filtersBlock__btn">AQUA PEARL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-80">
+            <div class="col-lg-9">
+                <div class="blockBorder bg-white d-flex flex-column flex-md-row align-items-center py-2">
+
+                    <h6 class="my-3">Czy odpowiedź jest pomocna?</h6>
+
+                    <div class="ml-md-auto my-3">
+                        <button class="btn btn-sm btn-black-outline px-4">TAK</button>
+                        <button class="btn btn-sm btn-black-outline px-4 ml-30">NIE</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bg-gray-100 pt-40 mb-40">
+        <div class="container">
+            <h2 class="text-center mb-60 pt-10">Zobacz wszystkie podłogi z zamkiem <strong class="font-weight-bold">Aqua Pearl</strong></h2>
+        </div>
+        <div class="row no-gutters decors">
+            <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+            </a>
+            <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+            </a>
+            <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+            </a>
+            <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+            </a>
+            <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+            </a>
+            <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+            </a>
+            <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+            </a>
+            <a class="decor col-12 col-sm-6 col-md-4 col-lg-3" style="background-image:url(https://www.swisskrono.pl/var/kronopol/storage/images/kronopol-aurum-flooring/kolekcja/volo-aqua-zero/d-4576-dab-lark/1380273-1-pol-PL/xD-4576-Dab-Lark-1_decor_list.jpg.pagespeed.ic.lEpCDP3puL.webp)" href="https://www.swisskrono.pl/aurum/Kolekcja/Volo-AQUA-ZERO/D-4576-Dab-Lark">
+                    <span class="decorDetails">
+                        <span class="features d-flex flex-wrap justify-content-between decorAttributes">
+                            <span class="name">
+                                D3332 Dąb Soul<br>
+                                AURUM | SOUND
+                            </span>
+                            <span class="features-info">
+                                8mm<br>
+                                Gwarancja 30 lat <br>
+                                Klasa ścieralności AC5<br>
+                                Struktura 3D
+                            </span>
+                            <span class="features-icon align-self-end">
+                                <p class="font11">Sugerowana cena detal.<br><b>84,99 zł/m<sup>2</sup> brutto</b></p>
+                                <span class="icon-8mm"></span>
+                                <span class="icon-3d"></span>
+                                <span class="icon-ac5"></span>
+                                <span class="icon-30 lat"></span>
+                            </span>
+                        </span>
+                    </span>
+            </a>
+        </div>
+    </div>
+    <div class="container text-center">
+        <a href="" class="text-decoration-none">POKAŻ WIĘCEJ <i class="icon-add font24 ml-10"></i></a>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-3 col-gl-4">
+                <img src="/images/swiss-krono.svg" alt="" width="220px" class="mb-30">
+                <p>Szwajcarska jakość, ponad 50-cio letnia tradycja i doświadczenie w produkcji płyt i wyrobów drewnopochodnych. Jesteśmy obecni w co drugim polskim domu i w ponad 75 krajach na całym świecie!</p>
+                <p><strong>SWISS KRONO</strong> sp. z o.o.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="bs4-xs d-block d-sm-none"></div>
+<div class="bs4-sm d-none d-sm-block d-md-none"></div>
+<div class="bs4-md d-none d-md-block d-lg-none"></div>
+<div class="bs4-lg d-none d-lg-block d-xl-none"></div>
+<div class="bs4-xl d-none d-xl-block d-xxl-none"></div>
+
+<script type="text/javascript" src="js/script.min.js"></script><script type="text/javascript" src="js/style.min.js"></script></body>
+</html>
