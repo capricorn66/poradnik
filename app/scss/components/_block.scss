@@ -1,8 +1,26 @@
 
+.historyBack {
+  color: $body-color;
+  margin-bottom: 20px;
+  @media (max-width: 575.98px) {
+    margin-top: 10px;
+  }
+  display: inline-block;
+  &:hover {
+    text-decoration: none;
+  }
+  i {
+    color: $app-color-1;
+    position: relative;
+    top: -2px;
+    margin-right: 4px;
+  }
+}
+
 .searchBlock {
   background: url("../images/search-bg.jpg");
   padding: 48px 0;
-  @media (max-width: 767px) {
+  @media (max-width: 767.98px) {
     padding: 28px 0 15px;
   }
 
@@ -40,7 +58,7 @@
 
   .custom-control-label::before {
     top: .35rem;
-    @media (max-width: 767px) {
+    @media (max-width: 767.98px) {
       top: .1rem;
     }
   }
@@ -166,7 +184,7 @@
   border: 1px solid $gray-200;
   padding: 30px;
   @media (max-width: 767.98px) {
-    padding: 30px 15px 15px;
+    padding: 30px 8px 8px;
   }
   margin-top: 30px;
 
@@ -213,12 +231,15 @@
   }
 
   &__icon {
-    margin: -75px 0 15px -15px;
+    margin: -75px 0 15px 0;
+    @media (max-width: 767.98px) {
+      margin-left: 0;
+    }
   }
 
   &__link {
     color: $gray-700;
-    letter-spacing: .14em;
+    letter-spacing: 1.4px;
     padding-left: 30px;
     @media (max-width: 575.98px) {
       padding-left: 15px;
@@ -282,6 +303,9 @@
   }
   list-style: none;
   margin-bottom: 40px;
+  a {
+    color: $body-color;
+  }
   ul, ol {
     margin-top: 24px;
     margin-bottom: 32px;
@@ -343,7 +367,6 @@ ol.block__list {
   }
 }
 
-
 .blockBorder {
   background-color: $gray-100;
   border: 1px solid $gray-200;
@@ -352,6 +375,9 @@ ol.block__list {
   @media (max-width: 767.98px) {
     padding: 20px 15px;
     font-size: 12px;
+  }
+  h5 a {
+    color: $body-color;
   }
 }
 
