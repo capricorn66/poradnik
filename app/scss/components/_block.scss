@@ -133,7 +133,6 @@
       a {
         color: $gray-700;
         transition: color .2s ease-in;
-
         &:hover {
           text-decoration: none;
           color: $app-color-1;
@@ -305,6 +304,9 @@
   margin-bottom: 40px;
   a {
     color: $body-color;
+    &:hover {
+      color: $app-color-1;
+    }
   }
   ul, ol {
     margin-top: 24px;
@@ -378,6 +380,9 @@ ol.block__list {
   }
   h5 a {
     color: $body-color;
+    &:hover {
+      color: $app-color-1;
+    }
   }
 }
 
