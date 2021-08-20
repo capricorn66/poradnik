@@ -1,0 +1,9 @@
+.btn-black-outline {
+  border-color: $gray-700;
+  font-size: 16px;
+  font-weight: 600;
+  &:focus,
+  &:hover {
+    background: $gray-700;
+  }
+}
