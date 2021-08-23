@@ -44,6 +44,15 @@
   color: $gray-400 !important;
 }
 
+.gray-700 {
+  color: $gray-700 !important;
+  a & {
+    &:hover {
+      color: $gray-700 !important;
+    }
+  }
+}
+
 .border-top-color-1 {
   border-top: 8px solid $app-color-1 !important;
 }

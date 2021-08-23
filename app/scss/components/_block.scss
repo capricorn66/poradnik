@@ -111,19 +111,19 @@
     margin-bottom: 20px;
     li {
       margin-bottom: 20px;
+      position: relative;
       &.active {
         color: $app-color-1;
         &::before {
-          content: "\2022";
-          color: $app-color-1;
-          font-weight: bold;
-          font-size: 24px;
-          line-height: 0;
+          content: "";
+          background-color: $app-color-1;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
           display: inline-block;
-          width: 1em;
-          margin-left: -1.02em;
-          top: .16em;
-          position: relative;
+          top: 8px;
+          left: -24px;
+          position: absolute;
         }
         a {
           color: $app-color-1;
@@ -190,6 +190,7 @@
     padding: 32px;
     border: 1px solid $gray-700;
     line-height: 28px;
+    font-size: 16px;
     &--dark {
       background: $gray-700;
       color: white;
