@@ -188,6 +188,9 @@
 
   &__note {
     padding: 32px;
+    @media (max-width: 767.98px) {
+      padding: 16px;
+    }
     border: 1px solid $gray-700;
     line-height: 28px;
     font-size: 16px;
@@ -200,11 +203,17 @@
     }
     ul {
       padding-left: 32px;
+      @media (max-width: 767.98px) {
+        padding-left: 0;
+      }
       margin-bottom: 0;
       list-style: none;
       li {
         position: relative;
         margin-bottom: 16px;
+        @media (max-width: 767.98px) {
+          padding-top: 26px;
+        }
         &:last-child {
           margin-bottom: 0;
         }
@@ -224,6 +233,10 @@
           position: absolute;
           left: -32px;
           top: 4px;
+          @media (max-width: 767.98px) {
+            left: 0;
+            top: 4px;
+          }
         }
       }
     }
@@ -313,10 +326,16 @@
       color: $app-color-1;
       text-decoration: none;
     }
+    i {
+      color: $app-color-1;
+    }
   }
   ul, ol {
     margin-top: 24px;
     margin-bottom: 32px;
+    @media (max-width: 575.98px) {
+      padding-left: 25px;
+    }
   }
   ul > li,
   > li {
@@ -358,6 +377,9 @@ ol.block__list {
     padding-left: 0;
     > li {
       position: relative;
+      @media (max-width: 991.98px) {
+        padding-top: 40px;
+      }
       &::before {
         content: counter(li);
         background-color: $app-color-1;
@@ -370,6 +392,10 @@ ol.block__list {
         position: absolute;
         top: 0;
         padding-top: 2px;
+        @media (max-width: 991.98px) {
+          margin: 0;
+          top: 0;
+        }
       }
     }
   }

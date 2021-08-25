@@ -36,6 +36,27 @@
   margin-bottom: -10px;
 }
 
+.mb-64 {
+  margin-bottom: 64px !important;
+}
+
+@media (min-width: 768px) {
+  .mb-md-112 {
+    margin-bottom: 112px !important;
+  }
+  .mb-md-60 {
+    margin-bottom: 60px !important;
+  }
+  .pt-md-60 {
+    padding-top: 60px !important;
+  }
+  .pb-md-60 {
+    padding-bottom: 60px !important;
+  }
+}
+
+
+
 .bg-gray-100 {
   background-color: $gray-100 !important;
 }
