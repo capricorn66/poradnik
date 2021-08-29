@@ -27,5 +27,8 @@
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-size: 10px;
   background-position-y: 4px;
-  top: 2px;
+  top: .27rem;
+  @media (max-width: 767.98px) {
+    top: 2px;
+  }
 }

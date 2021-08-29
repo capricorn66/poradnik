@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+// Variables
+//
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1480px
+) !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+        sm: 100%,
+        md: 100%,
+        lg: 100%,
+        xl: 100%,
+        xxl: 1440px
+) !default;
+
+@import "~bootstrap/scss/bootstrap";
+

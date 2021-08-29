@@ -30,7 +30,7 @@ module.exports = (env, options) => {
     return {
 
         entry: {
-            script: './app/js/app.js',
+            //bootstrap: './app/scss/bootstrap.scss',
             style: './app/scss/app.scss',
         },
 
@@ -71,18 +71,6 @@ module.exports = (env, options) => {
         module: {
             rules: [
                 {
-                    test: require.resolve('jquery'),
-                    use: [{
-                        loader: 'expose-loader',
-                        options: 'jQuery'
-                    },
-                        {
-                            loader: 'expose-loader',
-                            options: '$'
-                        }
-                    ]
-                },
-                {
                     test: /\.js$/,
                     exclude: /node-modules/,
                     use: {
@@ -95,7 +83,7 @@ module.exports = (env, options) => {
                 {
                     test: /\.css$/,
                     use:  [
-                        'style-loader',
+                        "style-loader",
                         MiniCssExtractPlugin.loader,
                         'css-loader'
                     ]
@@ -108,10 +96,21 @@ module.exports = (env, options) => {
                             options: {
                                 publicPath: path.resolve(__dirname, 'dist'),
                                 hmr: process.env.NODE_ENV === 'development',
+                                insert: "#some-element",
                             },
                         },
-                        { loader: 'css-loader', options: { sourceMap: true } },
-                        { loader: 'sass-loader', options: { sourceMap: true } }
+                        {
+                            loader: 'css-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        },
+                        {
+                            loader: 'sass-loader',
+                            options: {
+                                sourceMap: true
+                            }
+                        }
                     ]
                 },
                 {

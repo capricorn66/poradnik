@@ -2,12 +2,15 @@
   position: fixed;
   z-index: 101;
   top: 146px;
-
-  @media (max-width: 767.98px) {
-    top: 94px;
-  }
-
   right: 0;
+  @media (max-width: 767.98px) {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    background-color: $white;
+    box-shadow: 0 0 10px rgba($black, .4);
+    text-align: center;
+  }
   .btn__toolbox {
     background-color: $app-color-1;
     width: 64px;
@@ -15,10 +18,13 @@
     line-height: 20px;
     font-size: 32px;
     @media (max-width: 767.98px) {
-      width: 48px;
+      background-color: $white;
+      color: $app-color-1;
+      width: 64px;
       height: 48px;
       line-height: 20px;
       font-size: 24px;
+      display: inline-block;
     }
     display: block;
     color: white;
@@ -26,6 +32,10 @@
     border-bottom: 1px solid white;
     &:hover {
       background-color: $app-color-4;
+      @media (max-width: 767.98px) {
+        background-color: $white;
+        color: $app-color-4;
+      }
     }
   }
 }

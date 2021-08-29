@@ -179,6 +179,16 @@
   }
 }
 
+.bg-gray-100 {
+  a {
+    color: $gray-700;
+    &:hover {
+      text-decoration: none;
+      color: $app-color-1;
+    }
+  }
+}
+
 .block {
   border: 1px solid $gray-200;
   padding: 30px;
