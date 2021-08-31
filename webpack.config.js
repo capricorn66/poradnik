@@ -30,7 +30,8 @@ module.exports = (env, options) => {
     return {
 
         entry: {
-            //bootstrap: './app/scss/bootstrap.scss',
+            bootstrap: './app/scss/bootstrap.scss',
+            swisskrono: './app/scss/swisskrono.scss',
             style: './app/scss/app.scss',
         },
 
