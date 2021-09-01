@@ -1,7 +1,6 @@
 
 .historyBack {
   color: $body-color;
-  margin-bottom: 20px;
   @media (max-width: 575.98px) {
     margin-top: 10px;
   }
@@ -448,4 +447,8 @@ ol.block__list {
   text-align: center;
   border: 15px solid #FFF;
   display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
 }

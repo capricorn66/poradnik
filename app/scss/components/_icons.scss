@@ -24,6 +24,12 @@
   vertical-align: middle;
 }
 
+.icon-arrow-circle-left:before {
+  content: "\e99c";
+}
+.icon-arrow-circle-right:before {
+  content: "\e99d";
+}
 .icon-file-pdf:before {
   content: "\e99b";
 }
