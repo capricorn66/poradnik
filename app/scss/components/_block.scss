@@ -90,7 +90,7 @@
   border: 1px solid $gray-200;
   padding: 20px;
   margin-bottom: 40px;
-  h3 {
+  &__head {
     font-size: 16px;
     letter-spacing: .16em;
     text-transform: uppercase;
@@ -143,12 +143,13 @@
 }
 
 .filtersBlock {
-  h4 {
+  &__head {
     font-size: 14px;
     letter-spacing: .07em;
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 16px;
+    display: block;
   }
 
   h5 {
@@ -267,7 +268,7 @@
       padding-left: 15px;
     }
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     display: inline-block;
     transition: color .2s ease-in;
 
@@ -347,6 +348,14 @@
       padding-left: 25px;
     }
   }
+
+  &.block__list--sm {
+    ul > li,
+    > li {
+      margin-bottom: 16px;
+    }
+  }
+
   ul > li,
   > li {
     margin-bottom: 24px;

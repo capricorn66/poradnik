@@ -3,22 +3,21 @@
   font-size: 16px !important;
   line-height: 28px !important;
 }
-
 .font18 {
   font-size: 18px !important;
 }
 
-.font-weight-700 {
-  font-weight: 700 !important;
-}
-
-.font-weight-600 {
-  font-weight: 600 !important;
-}
 
 .font-weight-300 {
   font-weight: 300 !important;
 }
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+.font-weight-700 {
+  font-weight: 700 !important;
+}
+
 
 .app-color-1 {
   color: $app-color-1 !important;
@@ -36,17 +35,52 @@
   margin-bottom: -20px;
 }
 
+.mb-n64 {
+  margin-bottom: -64px;
+}
+
+.mb-n24 {
+  margin-bottom: -24px;
+}
+
 .mb-n10 {
   margin-bottom: -10px;
 }
 
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+.mb-48 {
+  margin-bottom: 48px !important;
+}
+.mb-56 {
+  margin-bottom: 56px !important;
+}
 .mb-64 {
   margin-bottom: 64px !important;
 }
 
+.pt-32 {
+  padding-top: 32px !important;
+}
+
+.pb-24 {
+  padding-bottom: 24px !important;
+}
+
 @media (min-width: 768px) {
-  .mb-md-112 {
-    margin-bottom: 112px !important;
+  .mb-md-32 {
+    margin-bottom: 32px !important;
   }
   .mb-md-60 {
     margin-bottom: 60px !important;
@@ -57,9 +91,13 @@
   .pb-md-60 {
     padding-bottom: 60px !important;
   }
+  .mb-md-80 {
+    margin-bottom: 80px !important;
+  }
+  .mb-md-112 {
+     margin-bottom: 112px !important;
+   }
 }
-
-
 
 .bg-gray-100 {
   background-color: $gray-100 !important;
