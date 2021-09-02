@@ -153,9 +153,28 @@
     <main>
 
         <div class="toolbox">
-            <button role="button" class="btn btn__toolbox"><i class="icon-sk-pin"></i></button>
-            <button role="button" class="btn btn__toolbox"><i class="icon-bubble"></i></button>
-            <button role="button" class="btn btn__toolbox"><i class="icon-share"></i></button>
+            <div class="toolbox__item">
+                <button role="button" class="btn btn__toolbox" id="toolboxPin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-sk-pin"></i></button>
+                <a href="" class="btn__toolbox btn__toolbox--mobile"><i class="icon-sk-pin"></i></a>
+                <div class="dropdown-menu toolbox__menu" aria-labelledby="toolboxPin">
+                    <a href="" class="toolbox__head">ZNAJDŹ SKLEP</a>
+                </div>
+            </div>
+            <div class="toolbox__item">
+                <button role="button" class="btn btn__toolbox" id="toolboxBubble" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-bubble"></i></button>
+                <a href="" class="btn__toolbox btn__toolbox--mobile"><i class="icon-bubble"></i></a>
+                <div class="dropdown-menu toolbox__menu" aria-labelledby="toolboxBubble">
+                    <button role="button" class="toolbox__head">ZAPYTAJ BOTA</button>
+                </div>
+            </div>
+            <div class="toolbox__item">
+                <button role="button" class="btn btn__toolbox btn__toolbox--mobile" id="toolboxShare" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-share"></i></button>
+                <div class="dropdown-menu toolbox__menu" aria-labelledby="toolboxShare">
+                    <div class="toolbox__head">UDOSTĘPNIJ</div>
+                    <a href="#" class="toolbox__link"><i class="icon-facebook"></i></a>
+                    <a href="#" class="toolbox__link"><i class="icon-instagram-sq"></i></a>
+                </div>
+            </div>
         </div>
 
         <div class="container pt-50">
