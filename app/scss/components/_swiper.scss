@@ -1,5 +1,8 @@
 .swiper-button-next,
 .swiper-button-prev {
+    &::after {
+        display: none;
+    }
     background: none;
     i {
         color: $app-color-1 !important;
@@ -7,14 +10,151 @@
     }
 }
 
-.swiper-button-next {
-    i {
-        padding-left: 2px;
+
+.swiper-gallery-flow {
+    position: relative;
+
+    .swiper-wrapper {
+        -ms-flex-align: start;
+        align-items: start;
+
+        @media (min-width: 768px) {
+            min-height: calc(33vw + (33vw * .4) + 116px );
+        }
+        @media (min-width: 992px) {
+            min-height: calc(33vw + (33vw * .3) + 116px );
+        }
+        @media (min-width: 1200px) {
+            min-height: calc(33vw + (33vw * .2) + 116px );
+        }
+        @media (min-width: 1400px) {
+            min-height: calc(33vw + (33vw * .1) + 116px );
+        }
     }
+
+    .swiper-slide:not(.swiper-slide-active) {
+        text-align: center;
+        img {
+            width: 80%;
+            @media (min-width: 576px) {
+                width: 70%;
+            }
+            @media (min-width: 768px) {
+                width: 60%;
+            }
+            opacity: .3;
+            border-color: transparent;
+        }
+        .desc {
+            opacity: 0;
+        }
+    }
+
+    .swiper-slide {
+        text-align: center;
+        height: auto;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: auto 0;
+
+        img {
+            width: 80%;
+            @media (min-width: 576px) {
+                width: 70%;
+            }
+            @media (min-width: 768px) {
+                width: 140%;
+            }
+            @media (min-width: 992px) {
+                width: 130%;
+            }
+            @media (min-width: 1200px) {
+                width: 120%;
+            }
+            @media (min-width: 1400px) {
+                width: 110%;
+            }
+
+            max-width: none;
+            transition: opacity ease .3s, width ease-out .3s;
+            transform-origin: center;
+            will-change: transition;
+        }
+        .desc {
+            padding-top: 64px;
+            opacity: 1;
+            transition: opacity ease .3s;
+        }
+    }
+
+    .container-nav {
+        position: absolute;
+
+        max-width: 68vw;
+        padding-bottom: 80.5vw;
+
+        @media (min-width: 576px) {
+            max-width: 70vw;
+            padding-bottom: 70.5vw;
+        }
+        @media (min-width: 768px) {
+            max-width: calc(33vw + (33vw * .4) );
+            padding-bottom: calc(33.5% + (33.5% * .4));
+        }
+        @media (min-width: 992px) {
+            max-width: calc(33vw + (33vw * .3) );
+            padding-bottom: calc(33.5% + (33.5% * .3));
+        }
+        @media (min-width: 1200px) {
+            max-width: calc(33vw + (33vw * .2) );
+            padding-bottom: calc(33.5% + (33.5% * .2));
+        }
+        @media (min-width: 1400px) {
+            max-width: calc(33vw + (33vw * .1) );
+            padding-bottom: calc(33.5% + (33.5% * .1));
+        }
+
+        left: 0;
+        right: 0;
+        .swiper-button-prev {
+            left: -50px;
+        }
+        .swiper-button-next {
+            right: -50px;
+        }
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        top: calc(57.5vw + (57.5vw * .4) + 16px );
+        @media (min-width: 576px) {
+            top: calc(50.5vw + (50.5vw * .4) + 16px );
+        }
+        @media (min-width: 768px) {
+            top: calc(33.5vw + (33.5vw * .4) + 16px );
+        }
+        @media (min-width: 992px) {
+            top: calc(33.5vw + (33.5vw * .3) + 16px );
+        }
+        @media (min-width: 1200px) {
+            top: calc(33.5vw + (33.5vw * .2) + 16px );
+        }
+        @media (min-width: 1400px) {
+            top: calc(33.5vw + (33.5vw * .1) + 16px );
+        }
+
+        .swiper-pagination-current {
+            font-weight: 600;
+        }
+    }
+
+
+
 }
 
-.swiper-button-prev {
-    i {
-        padding-right: 1px;
-    }
-}
