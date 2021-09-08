@@ -384,16 +384,14 @@
         </div>
     </div>
 
-    <div class="bg-gray-100 pt-32 pt-md-60 pb-24 pb-md-60 mb-64 mb-md-112">
+    <div class="bg-gray-100 pt-32 pt-md-60 pb-24 pb-md-72 mb-64 mb-md-112">
 
         <div class="container text-sm-center">
-
             <h2 class="h4 mb-40 mb-md-60">Instrukcja montażu krok po kroku</h2>
-
         </div>
 
-        <div class="swiper-container swiper-gallery-flow mb-8" data-rel="swiper-gallery">
-            <div class="container container-nav">
+        <div class="swiper-container swiper-gallery-flow mb-24" data-rel="swiper-gallery">
+            <div class="swiper-nav">
                 <div class="swiper-button-prev">
                     <i class="icon-arrow-circle-left"></i>
                 </div>
@@ -401,39 +399,65 @@
                     <i class="icon-arrow-circle-right"></i>
                 </div>
             </div>
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper mb-16">
                 <div class="swiper-slide">
                     <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1 ">
-                    <div class="desc">
-                        <p class="font16">Podpis do 1-szego obrazka.</p>
-                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1">
-                    <div class="desc">
-                        <p class="font16">Podpis do 2-go obrazka.</p>
-                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1">
-                    <div class="desc">
-                        <p class="font16">Podpis do 3-go obrazka.</p>
-                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1">
-                    <div class="desc">
-                        <p class="font16">Podpis do 4-go obrazka.</p>
-                    </div>
                 </div>
                 <div class="swiper-slide">
                     <img src="./images/gallery-img.png" alt="gallery-img" class="img-fluid border-black-1">
-                    <div class="desc">
-                        <p class="font16">Podpis do 5-go obrazka.</p>
-                    </div>
                 </div>
             </div>
             <div class="swiper-pagination"></div>
+        </div>
+        <div class="container">
+            <div class="swiper-container" data-rel="swiper-gallery-desc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide px-sm-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="font16">Podpis do 1-szego obrazka.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide px-sm-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="font16">Podpis do 2-szego obrazka.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide px-sm-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="font16">Podpis do 3-szego obrazka.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide px-sm-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="font16">Podpis do 4-szego obrazka.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide px-sm-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <p class="font16">Podpis do 5-szego obrazka.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -470,7 +494,39 @@
                     nextEl: '.swiper-container[data-rel="swiper-gallery"] .swiper-button-next',
                     prevEl: '.swiper-container[data-rel="swiper-gallery"] .swiper-button-prev',
                 },
+                on: {
+                    afterInit: function () {
+                        var $activeSlider = $('.swiper-wrapper .swiper-slide-active .img-fluid', this.$el);
+                        var $nav = $('.swiper-nav', this.$el);
+
+                        $activeSlider[0].addEventListener('transitionend', function() {
+                            $nav.css('width', $activeSlider.width());
+                        }, { once: true });
+                    },
+                },
             });
+
+
+            var gallerySwiperDesc = new Swiper('.swiper-container[data-rel="swiper-gallery-desc"]', {
+                spaceBetween: 0,
+                simulateTouch: false,
+            });
+
+            gallerySwiper
+                .on('slideNextTransitionStart', function () {
+                    gallerySwiperDesc.slideNext();
+                })
+                .on('slidePrevTransitionStart', function () {
+                    gallerySwiperDesc.slidePrev();
+                })
+                .on('slideChangeTransitionStart', function () {
+                    var $wrapper = $('.swiper-wrapper', this.$el);
+                    $wrapper.css('min-height', $wrapper.height());
+                })
+                .on('slideChangeTransitionEnd', function () {
+                    var $wrapper = $('.swiper-wrapper', this.$el);
+                    $wrapper.css('min-height', '');
+                });
 
         });
 
@@ -551,14 +607,6 @@
                 loop: true,
                 spaceBetween: 0,
                 simulateTouch: false,
-                pagination: {
-                    el: '.swiper-container[data-rel="swiper-gallery-2"] .swiper-pagination',
-                    type: "fraction",
-                },
-                navigation: {
-                    nextEl: '.swiper-container[data-rel="swiper-gallery-2"] .swiper-button-next',
-                    prevEl: '.swiper-container[data-rel="swiper-gallery-2"] .swiper-button-prev'
-                },
             });
 
             gallerySwiper2
